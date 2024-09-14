@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background: url(image/backimage.png.jpg) no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    width: 100%;
+    animation-name: Example;
+    animation-duration: 15s;
+    animation-iteration-count: 2s linear infinite;
+
+}
+@keyframes  Example{
+    0%{
+        background: url(image/image_1.png.webp);
+        background-repeat: no-repeat;
+        background-size:  100% 100%;
+    }
+    25%{
+        background: url(image/image_2.png.jpg);
+        background-repeat: no-repeat;
+        background-size:  100% 100%;
+    }
+    50%{
+        background: url(image/image_3.png.jpg);
+        background-repeat: no-repeat;
+        background-size:  100% 100%;
+    }
+    75%{
+        background: url(image/image_4.png.jpg);
+        background-repeat: no-repeat;
+        background-size:  100% 100%;
+    }
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    border: 2px solid rgb(255, 255, 2550.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form-box h2{
+    color: black;
+    text-align: center;
+    font-size: 32px;
+}
+.form-box .input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.form-box .input-box input{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 20px 0 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+i{
+    position: absolute;
+    color: black;
+    top: 13px;
+    right: 0;
+    cursor: pointer;
+}
+input::placeholder{
+    color: #fff;
+}
+.btn1{
+    color: black;
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 3px 0 10px rgba(0, 0, 19, 0.068);
+}
+.group{
+    display: flex;
+    justify-content: space-between;
+}
+.group span a{
+    color: black;
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.group a:focus{
+    text-decoration: underline;
+}
+#result{
+    color: red;
+    font-weight: 600;
+    position: relative;
+    top: 25px;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform .4s, top .4s;
+    visibility: hidden;
+    text-align: center;
+    padding: 0 30px 30px;
+    height: 330px;
+    color: black;
+}
+.popup ion-icon{
+    color: #0f0;
+    font-size: 50px;
+}
+.popup button{
+    width: 100%;
+    background: #0f0;
+    padding: 10px 0;
+    margin-top: 50px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, .1);
+}
+.popup a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.open-slide{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}
